@@ -60,6 +60,7 @@
         </sprites>
         <sprite>sprites\sprBigLake</sprite>
       </sprites>
+      <sprite>sprites\sprMap1Obstacles</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\sprItemAmmo</sprite>
@@ -151,6 +152,7 @@
     <background>background\bgTitle720p</background>
     <background>background\bgTitle810p</background>
     <background>background\bgGrassHD1</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
