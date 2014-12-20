@@ -60,6 +60,7 @@
         </sprites>
         <sprite>sprites\sprBigLake</sprite>
         <sprite>sprites\sprBigLake2</sprite>
+        <sprite>sprites\sprBigLake3</sprite>
       </sprites>
       <sprite>sprites\sprMap1Obstacles</sprite>
     </sprites>
@@ -111,6 +112,7 @@
         <sprite>sprites\sprSandBL</sprite>
         <sprite>sprites\sprSandBR</sprite>
         <sprite>sprites\sprBigLake2Sand</sprite>
+        <sprite>sprites\sprBigLake3Sand</sprite>
       </sprites>
       <sprites name="Shallow Water">
         <sprite>sprites\sprWaterShallow</sprite>
@@ -243,6 +245,7 @@
         <object>objects\objWaterDeep</object>
         <object>objects\objLakeBig1</object>
         <object>objects\objWaterBigLake2</object>
+        <object>objects\objWaterBigLake3</object>
         <objects name="InsideCorners">
           <object>objects\objWaterDeepTR</object>
           <object>objects\objWaterDeepTL</object>
@@ -318,6 +321,7 @@
       <objects name="Sand">
         <object>objects\objSand</object>
         <object>objects\objSandBigLake2</object>
+        <object>objects\objBigLake3Sand</object>
         <object>objects\objSandTR</object>
         <object>objects\objSandTL</object>
         <object>objects\objSandBL</object>
