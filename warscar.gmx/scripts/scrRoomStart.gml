@@ -10,6 +10,8 @@ with objHomeBaseTeam2
     instance_create(x+sprite_width/2, y+sprite_height/2,objPlayer2)
 }
 
+scrPopulateBuildings()
+
 scrPopulateItems()
 
 scrComputerPathInit()

@@ -63,6 +63,12 @@
         <sprite>sprites\sprBigLake3</sprite>
       </sprites>
       <sprite>sprites\sprMap1Obstacles</sprite>
+      <sprites name="Buildings">
+        <sprite>sprites\sprBuilding1</sprite>
+        <sprite>sprites\sprBuilding2</sprite>
+        <sprite>sprites\sprBuilding3</sprite>
+        <sprite>sprites\sprBuilding4</sprite>
+      </sprites>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\sprItemAmmo</sprite>
@@ -171,6 +177,7 @@
       <script>scripts\scrRoomStart.gml</script>
       <script>scripts\scrComputerPathInit.gml</script>
       <script>scripts\scrPopulateItems.gml</script>
+      <script>scripts\scrPopulateBuildings.gml</script>
       <script>scripts\scrFindFreeSpace.gml</script>
       <scripts name="Map Creation">
         <script>scripts\scrCreateRoom.gml</script>
@@ -270,6 +277,12 @@
           <object>objects\objWaterDeepEdgeLeft</object>
           <object>objects\objWaterDeepEdgeBottom</object>
         </objects>
+      </objects>
+      <objects name="Buildings">
+        <object>objects\objBuilding1</object>
+        <object>objects\objBuilding2</object>
+        <object>objects\objBuilding3</object>
+        <object>objects\objBuilding4</object>
       </objects>
     </objects>
     <objects name="Projectiles">
