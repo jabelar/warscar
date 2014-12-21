@@ -6,6 +6,7 @@ if player_type = HUMAN
     scrProcessInputTank()
     scrProcessInputTurret()
     scrProcessInputTriggers()
+    scrProcessInputOther()
 }
 else // computer player so process AI
 {

@@ -1,7 +1,7 @@
 // pick up or drop own flag
 if key_flag
 {
-    if have_own_flag
+    if have_own_flag // drop the flag
     {
         audio_play_sound(sndFlag, 1, false)
         own_flag_id.carrier = noone
