@@ -161,7 +161,7 @@
       <script>scripts\scrControllerDrawEvent.gml</script>
       <script>scripts\scrControllerDrawGui.gml</script>
       <script>scripts\scrControllerRoomStartEvent.gml</script>
-      <script>scripts\scrRoomStart.gml</script>
+      <script>scripts\scrMap1RoomStart.gml</script>
       <script>scripts\scrComputerPathInit.gml</script>
       <script>scripts\scrPopulateItems.gml</script>
       <script>scripts\scrFindFreeSpace.gml</script>
@@ -175,6 +175,8 @@
       <scripts name="Display Management">
         <script>scripts\scrSetApplicationSurfaceSize.gml</script>
       </scripts>
+      <script>scripts\scrMainMenuStepEvent.gml</script>
+      <script>scripts\scrMenuRoomStartEvent.gml</script>
     </scripts>
     <script>scripts\scrHindranceParentCreateEvent.gml</script>
     <scripts name="Players">
@@ -197,6 +199,10 @@
         <script>scripts\scrProcessEnvironment.gml</script>
         <script>scripts\scrProcessAI.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Menu">
+      <script>scripts\scrMenuCursorStepEvent.gml</script>
+      <script>scripts\scrMenuCursorCreateEvent.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -333,7 +339,7 @@
       <object>objects\objHomeBaseTeam1</object>
       <object>objects\objHomeBaseTeam2</object>
     </objects>
-    <objects name="Starting Screen">
+    <objects name="Menu Buttons">
       <object>objects\objCursor</object>
       <object>objects\objButtonPlay</object>
       <object>objects\objButtonPlayers</object>
@@ -341,7 +347,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roomStarting</room>
+    <room>rooms\roomMenu</room>
     <room>rooms\roomMain</room>
   </rooms>
   <help>

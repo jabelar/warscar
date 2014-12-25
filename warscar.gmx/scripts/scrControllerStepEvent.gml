@@ -1,12 +1,9 @@
 // behave differently depending on which room you're in (controller is persistent)
 switch room
 {
-    case roomStarting:
+    case roomMenu:
     {
-        if alarm[0]<0
-        {
-            room_goto(roomMain)
-        }
+        scrMainMenuStepEvent()
         break ;
     }
     case roomMain:

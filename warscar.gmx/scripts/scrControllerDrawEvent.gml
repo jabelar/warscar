@@ -1,7 +1,7 @@
 draw_set_font(fontMilitaryStencil)
 switch room
 {
-    case roomStarting:
+    case roomMenu:
     {
         break ;
     }

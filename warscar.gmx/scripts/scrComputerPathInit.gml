@@ -11,4 +11,3 @@ with (objPlayer2)
     }
     show_debug_message("Path found = "+string(path_found)+" and Path length ="+string(path_get_length(path)))
 }
-

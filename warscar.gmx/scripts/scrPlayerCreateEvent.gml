@@ -30,11 +30,6 @@ state = NORMAL
 angle_main_gun = 0
 offset_distance_main_gun = 64
 
-// initialize joystick button press variables
-button_previous_pressed[5] = false
-button_previous_pressed[6] = false
-button_previous_pressed[7] = false
-
 // initialize flag states
 have_enemy_flag = false
 have_own_flag = false

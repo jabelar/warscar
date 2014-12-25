@@ -11,40 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>scrConstants()
-
-input_forward = vk_up
-input_right = vk_right
-input_left = vk_left
-input_backward = vk_down
-input_fire1 = vk_control
-input_fire2 = vk_alt
-input_fire3 = vk_space
-
-// initialize joystick button press variables
-button_previous_pressed[5] = false
-button_previous_pressed[6] = false
-button_previous_pressed[7] = false
-
-// default settings
-global.game_type = VERSUS
-global.number_of_players = 2
-
-</string>
+            <kind>9</kind>
+            <script>scrMenuCursorCreateEvent</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -52,51 +53,41 @@ global.number_of_players = 2
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>// need to react to any input type
-// so check them all
-var click_pressed ;
-
-input_style = KEYBOARD
-scrProcessInput()
-if key_forward then y -=8
-if key_backward then y += 8
-if key_right then x += 8
-if key_left then x -= 8
-click_pressed = key_weapon1_pressed
-
-input_style = JOYSTICK
-current_player = PLAYER1
-scrProcessInput()
-if key_forward then y -=8
-if key_backward then y += 8
-if key_right then x += 8
-if key_left then x -= 8
-click_pressed = click_pressed or key_weapon1_pressed
-
-input_style = JOYSTICK
-current_player = PLAYER2
-scrProcessInput()
-if key_forward then y -=8
-if key_backward then y += 8
-if key_right then x += 8
-if key_left then x -= 8
-click_pressed = click_pressed or key_weapon1_pressed
-
-</string>
+            <kind>9</kind>
+            <script>scrMenuCursorStepEvent</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -113,5 +104,8 @@ click_pressed = click_pressed or key_weapon1_pressed
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>16,16</point>
+  </PhysicsShapePoints>
 </object>

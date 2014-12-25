@@ -3,14 +3,14 @@ scrSetApplicationSurfaceSize()
 
 switch room
 {
-    case roomStarting:
+    case roomMenu:
     {
-        alarm[0]=room_speed
+        scrMenuRoomStartEvent()
         break;
     }
     case roomMain:
     {
-        scrRoomStart()
+        scrMap1RoomStart()
         // scale views to application display size
         view_xport[0] = 0
         view_wport[0] = application_width / 2
