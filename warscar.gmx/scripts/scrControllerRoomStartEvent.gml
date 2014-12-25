@@ -6,11 +6,15 @@ switch room
     case roomMenu:
     {
         scrMenuRoomStartEvent()
+        audio_stop_all()
+        background_music = audio_play_sound(soundBackgroundOlypmics82, 10, true)
         break;
     }
     case roomMain:
     {
         scrMap1RoomStart()
+        audio_stop_all()
+        background_music = audio_play_sound(soundBackgroundSpaceBattle, 10, true)
         // scale views to application display size
         view_xport[0] = 0
         view_wport[0] = application_width / 2

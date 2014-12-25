@@ -10,6 +10,8 @@
     <sound>sound\sndFlag</sound>
     <sound>sound\sndFanfare</sound>
     <sound>sound\sndExplosion</sound>
+    <sound>sound\soundBackgroundOlypmics82</sound>
+    <sound>sound\soundBackgroundSpaceBattle</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Tank Bodies">
