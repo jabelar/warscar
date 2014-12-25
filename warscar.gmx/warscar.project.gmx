@@ -58,7 +58,16 @@
           <sprite>sprites\sprWaterDeepEdgeBottom0</sprite>
           <sprite>sprites\sprWaterDeepEdgeLeft1</sprite>
         </sprites>
-        <sprite>sprites\sprBigLake</sprite>
+        <sprite>sprites\sprBigLake2Left</sprite>
+        <sprite>sprites\sprBigLake2Right</sprite>
+        <sprite>sprites\sprBigLake3</sprite>
+      </sprites>
+      <sprite>sprites\sprMap1Obstacles</sprite>
+      <sprites name="Buildings">
+        <sprite>sprites\sprBuilding1</sprite>
+        <sprite>sprites\sprBuilding2</sprite>
+        <sprite>sprites\sprBuilding3</sprite>
+        <sprite>sprites\sprBuilding4</sprite>
       </sprites>
     </sprites>
     <sprites name="Items">
@@ -108,6 +117,9 @@
         <sprite>sprites\sprSandTL</sprite>
         <sprite>sprites\sprSandBL</sprite>
         <sprite>sprites\sprSandBR</sprite>
+        <sprite>sprites\sprSandBigLake2Left</sprite>
+        <sprite>sprites\sprSandBigLake2Right</sprite>
+        <sprite>sprites\sprBigLake3Sand</sprite>
       </sprites>
       <sprites name="Shallow Water">
         <sprite>sprites\sprWaterShallow</sprite>
@@ -151,6 +163,7 @@
     <background>background\bgTitle720p</background>
     <background>background\bgTitle810p</background>
     <background>background\bgGrassHD1</background>
+    <background>background\bgGrassHD2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -164,6 +177,7 @@
       <script>scripts\scrMap1RoomStart.gml</script>
       <script>scripts\scrComputerPathInit.gml</script>
       <script>scripts\scrPopulateItems.gml</script>
+      <script>scripts\scrPopulateBuildings.gml</script>
       <script>scripts\scrFindFreeSpace.gml</script>
       <scripts name="Map Creation">
         <script>scripts\scrCreateRoom.gml</script>
@@ -185,13 +199,14 @@
       <script>scripts\scrProcessInputTank.gml</script>
       <script>scripts\scrProcessInputTurret.gml</script>
       <script>scripts\scrProcessInputTriggers.gml</script>
-      <script>scripts\scrProcessTankOther.gml</script>
+      <script>scripts\scrProcessInputOther.gml</script>
       <script>scripts\scrProcessCollisions.gml</script>
       <script>scripts\scrPlayerAlarm3Event.gml</script>
       <script>scripts\scrPlayerDrawEvent.gml</script>
       <script>scripts\scrPlayerCreateEvent.gml</script>
       <script>scripts\scrProcessTankWeapons.gml</script>
       <script>scripts\scrProcessTankMovement.gml</script>
+      <script>scripts\scrProcessTankOther.gml</script>
       <script>scripts\scrProcessPlayerStep.gml</script>
       <script>scripts\scrPathEndEvent.gml</script>
       <scripts name="Artificial Intelligence">
@@ -243,7 +258,9 @@
       <object>objects\objObstacleWall1</object>
       <objects name="WaterDeep">
         <object>objects\objWaterDeep</object>
-        <object>objects\objLakeBig1</object>
+        <object>objects\objWaterBigLake2Left</object>
+        <object>objects\objWaterBigLake2Right</object>
+        <object>objects\objWaterBigLake3</object>
         <objects name="InsideCorners">
           <object>objects\objWaterDeepTR</object>
           <object>objects\objWaterDeepTL</object>
@@ -266,6 +283,12 @@
           <object>objects\objWaterDeepEdgeLeft</object>
           <object>objects\objWaterDeepEdgeBottom</object>
         </objects>
+      </objects>
+      <objects name="Buildings">
+        <object>objects\objBuilding1</object>
+        <object>objects\objBuilding2</object>
+        <object>objects\objBuilding3</object>
+        <object>objects\objBuilding4</object>
       </objects>
     </objects>
     <objects name="Projectiles">
@@ -318,6 +341,9 @@
       </objects>
       <objects name="Sand">
         <object>objects\objSand</object>
+        <object>objects\objSandBigLake2Left</object>
+        <object>objects\objSandBigLake2Right</object>
+        <object>objects\objBigLake3Sand</object>
         <object>objects\objSandTR</object>
         <object>objects\objSandTL</object>
         <object>objects\objSandBL</object>
