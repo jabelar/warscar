@@ -157,6 +157,7 @@
       <sprite>sprites\sprButtonPlay</sprite>
       <sprite>sprites\sprButton</sprite>
       <sprite>sprites\sprButton2Options</sprite>
+      <sprite>sprites\sprButton5Options</sprite>
       <sprite>sprites\sprButtonPlayers</sprite>
       <sprite>sprites\sprButtonGameType</sprite>
       <sprite>sprites\sprCursor</sprite>
@@ -374,6 +375,8 @@
     <objects name="Menu Buttons">
       <object>objects\objCursor</object>
       <object>objects\objButtonPlay</object>
+      <object>objects\objButtonInput</object>
+      <object>objects\objButtonPoints</object>
       <object>objects\objButtonPlayers</object>
       <object>objects\objButtonGameType</object>
     </objects>
