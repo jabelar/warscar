@@ -153,8 +153,10 @@
       <sprite>sprites\sprHomeBaseBlue</sprite>
       <sprite>sprites\sprite16</sprite>
     </sprites>
-    <sprites name="Starting Screen">
+    <sprites name="Menu Buttons">
       <sprite>sprites\sprButtonPlay</sprite>
+      <sprite>sprites\sprButton</sprite>
+      <sprite>sprites\sprButton2Options</sprite>
       <sprite>sprites\sprButtonPlayers</sprite>
       <sprite>sprites\sprButtonGameType</sprite>
       <sprite>sprites\sprCursor</sprite>
@@ -190,6 +192,7 @@
       </scripts>
       <scripts name="Display Management">
         <script>scripts\scrSetApplicationSurfaceSize.gml</script>
+        <script>scripts\scrButtonDrawEvent.gml</script>
       </scripts>
       <script>scripts\scrMainMenuStepEvent.gml</script>
       <script>scripts\scrMenuRoomStartEvent.gml</script>
@@ -248,6 +251,7 @@
         <object>objects\objParentMudPoint</object>
         <object>objects\objParentMudEdge</object>
       </objects>
+      <object>objects\objParentButton</object>
     </objects>
     <objects name="Controllers">
       <object>objects\objGameController</object>
