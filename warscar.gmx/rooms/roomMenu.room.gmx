@@ -58,6 +58,7 @@
     <instance objName="objButtonGameType" x="32" y="192" name="inst_886AAF7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objButtonPoints" x="32" y="272" name="inst_99906B15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objButtonPlay" x="592" y="32" name="inst_2F156033" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objButtonMusicLevel" x="32" y="352" name="inst_37BA14FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -24,6 +24,7 @@ click_pressed = click_pressed or key_weapon1_pressed
 
 scrKeepInRoom()
 
+// cycle through options on each click of a button
 if click_pressed
 {
     button_id = instance_position(x, y, objParentButton)
@@ -33,7 +34,8 @@ if click_pressed
         if image_index >= image_number then image_index = 0
     }
 }
-    
+
+// process starting the game   
 if click_pressed and instance_position(x, y, objButtonPlay)
 {
     room_goto(roomMain)

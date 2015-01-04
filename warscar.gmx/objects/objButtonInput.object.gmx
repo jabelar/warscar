@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>objParentButton</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -40,44 +40,41 @@ image_index = 0
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>switch (image_index)
-{
-    case 0:
-        global.input_style_tank[PLAYER1] = TANK_JOYSTICK_PAIR
-        global.input_style_turret[PLAYER1] = TURRET_JOYSTICK_PAIR
-        break ;
-    case 1:
-        global.input_style_tank[PLAYER1] = TANK_JOYSTICK_SING
-        global.input_style_turret[PLAYER1] = TURRET_JOYSTICK_SING
-        break ;
-    case 2:
-        global.input_style_tank[PLAYER1] = TANK_JOYSTICK_DIR
-        global.input_style_turret[PLAYER1] = TURRET_JOYSTICK_DIR
-        break ;
-    case 3:
-        global.input_style_tank[PLAYER1] = TANK_KEYBOARD
-        global.input_style_turret[PLAYER1] = TURRET_KEYBOARD
-        break ;
-    case 4:
-        global.input_style_tank[PLAYER1] = TANK_TOUCH
-        global.input_style_turret[PLAYER1] = TURRET_TOUCH
-        break ;
-}
-</string>
+            <kind>9</kind>
+            <script>scrButtonInputStepEvent</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

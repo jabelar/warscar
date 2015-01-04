@@ -158,6 +158,7 @@
       <sprite>sprites\sprButton</sprite>
       <sprite>sprites\sprButton2Options</sprite>
       <sprite>sprites\sprButton5Options</sprite>
+      <sprite>sprites\sprButton3Options</sprite>
       <sprite>sprites\sprButtonPlayers</sprite>
       <sprite>sprites\sprButtonGameType</sprite>
       <sprite>sprites\sprCursor</sprite>
@@ -225,6 +226,8 @@
     <scripts name="Menu">
       <script>scripts\scrMenuCursorStepEvent.gml</script>
       <script>scripts\scrMenuCursorCreateEvent.gml</script>
+      <script>scripts\scrButtonInputStepEvent.gml</script>
+      <script>scripts\scrButtonMusicLevelStepEvent.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -380,6 +383,7 @@
       <object>objects\objButtonPoints</object>
       <object>objects\objButtonPlayers</object>
       <object>objects\objButtonGameType</object>
+      <object>objects\objButtonMusicLevel</object>
     </objects>
   </objects>
   <rooms name="rooms">
