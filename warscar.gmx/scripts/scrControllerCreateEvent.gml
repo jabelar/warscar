@@ -1,3 +1,5 @@
+show_debug_message("scrControllerCreateEvent started")
+
 scrConstants() 
 
 global.player_score[PLAYER1] = 0
@@ -12,3 +14,5 @@ global.input_style_turret[PLAYER2] = TURRET_JOYSTICK_DIR
 global.points_to_win = 3
 
 global.music_level = 1.0
+
+show_debug_message("scrControllerCreateEvent finished")
