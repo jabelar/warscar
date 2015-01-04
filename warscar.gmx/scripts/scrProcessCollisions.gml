@@ -63,39 +63,7 @@ switch global.game_type
             own_flag_id = objFlagBlue.id
             enemy_flag_id = objFlagRed.id
         }
-        
-        // check if hit own flag
-        //flag_id = instance_place(x, y, own_flag_id)
-        //if flag_id > 0 // hit own flag
-        //{
-        //    switch flag_id.state
-        //    {
-        //        case FLAG_HOME:
-        //        {   
-        //            // do nothing
-        //            break ;
-        //        }
-        //        case FLAG_CAPTURED:
-        //        {
-        //            // do nothing
-        //            break ;
-        //        }
-        //        case FLAG_ABANDONED:
-        //        {
-        //            audio_play(sndFlag, 1, false)
-        //            flag_id.state = FLAG_RETURNING
-        //            have_own_flag = true
-        //            flag_id.carrier = id
-        //            break ;
-        //        }
-        //        case FLAG_RETURNING:
-       //         {
-        //            // do nothing
-        //            break ;
-        //        }
-        //    }
-        //}
-        
+               
         // check if hit enemy flag
         flag_id = instance_place(x, y, enemy_flag_id)
         if flag_id > 0 // hit enemy flag
@@ -169,15 +137,6 @@ switch global.game_type
                             x = xstart
                             y = ystart
                         }
-                        //else if state = FLAG_RETURNING
-                        //{
-                        //    state = FLAG_HOME
-                        //    carrier = noone
-                        //    other.have_own_flag = false
-                            // return it to starting position
-                        //    x = xstart
-                        //    y = ystart
-                        //}
                     }
                 }
             }

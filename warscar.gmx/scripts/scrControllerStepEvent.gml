@@ -13,12 +13,12 @@ switch room
         {
             case VERSUS:
             {
-                if global.player_score[PLAYER1] >= 3
+                if global.player_score[PLAYER1] >= global.points_to_win
                 {
                     show_message("Player 1 Wins!")
                     game_restart()
                 }
-                if global.player_score[PLAYER2] >= 3
+                if global.player_score[PLAYER2] >= global.points_to_win
                 {
                     show_message("Player 2 Wins!")
                     game_restart()
@@ -27,12 +27,12 @@ switch room
             }
             case CAPTURE_THE_FLAG:
             {
-                if global.player_score[PLAYER1] >= 3
+                if global.player_score[PLAYER1] >= global.points_to_win
                 {
                     show_message("Player 1 Wins!")
                     game_restart()
                 }
-                if global.player_score[PLAYER2] >= 3
+                if global.player_score[PLAYER2] >= global.points_to_win
                 {
                     show_message("Player 2 Wins!")
                     game_restart()
