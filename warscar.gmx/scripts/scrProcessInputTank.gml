@@ -83,3 +83,9 @@ else if input_style_tank = TANK_JOYSTICK_DIR
         }
     }
 }
+
+    if gamepad_axis_value(2, gp_axislv) < 0
+    {
+        show_debug_message("Second controller detected")
+    }
+
