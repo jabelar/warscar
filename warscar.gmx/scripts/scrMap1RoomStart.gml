@@ -14,4 +14,4 @@ scrPopulateBuildings()
 
 scrPopulateItems()
 
-scrComputerPathInit()
+if objPlayer2.player_type == COMPUTER then scrComputerPathInit()

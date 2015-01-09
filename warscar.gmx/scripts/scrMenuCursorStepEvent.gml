@@ -4,8 +4,8 @@ var click_pressed ;
 var button_id ;
 
 input_style_turret = TANK_KEYBOARD
-
 input_style_tank = TANK_KEYBOARD
+
 scrProcessInput()
 if key_forward then y -=8
 if key_backward then y += 8

@@ -226,7 +226,8 @@
     <scripts name="Menu">
       <script>scripts\scrMenuCursorStepEvent.gml</script>
       <script>scripts\scrMenuCursorCreateEvent.gml</script>
-      <script>scripts\scrButtonInputStepEvent.gml</script>
+      <script>scripts\scrButtonInputPlayer1StepEvent.gml</script>
+      <script>scripts\scrButtonInputPlayer2StepEvent.gml</script>
       <script>scripts\scrButtonMusicLevelStepEvent.gml</script>
       <script>scripts\scrButtonPointsStepEvent.gml</script>
     </scripts>
@@ -380,7 +381,8 @@
     <objects name="Menu Buttons">
       <object>objects\objCursor</object>
       <object>objects\objButtonPlay</object>
-      <object>objects\objButtonInput</object>
+      <object>objects\objButtonInputPlayer1</object>
+      <object>objects\objButtonInputPlayer2</object>
       <object>objects\objButtonPoints</object>
       <object>objects\objButtonPlayers</object>
       <object>objects\objButtonGameType</object>

@@ -32,7 +32,7 @@ if view_current = current_player // only draw in players view
         }
     }
     
-    if ((current_player == PLAYER2) && path_found) 
+    if ((current_player == PLAYER2) && player_type == COMPUTER && path_found) 
     {
         draw_path(path, xpathstart, ypathstart, false)
         // debug messages

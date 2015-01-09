@@ -1,4 +1,5 @@
 // tank movement input
+
 if input_style_tank = TANK_KEYBOARD
 {
 
@@ -21,46 +22,46 @@ if input_style_tank = TANK_KEYBOARD
 }
 else if input_style_tank = TANK_JOYSTICK_PAIR
 {
-    if gamepad_axis_value(1, gp_axislv) < 0
+    if gamepad_axis_value(contrl_num, gp_axislv) < 0
     {
         key_forward = true ;
     }
-    if gamepad_axis_value(1, gp_axisrh) < 0
+    if gamepad_axis_value(contrl_num, gp_axisrh) < 0
     {
         key_left = true ;
     }
-    if gamepad_axis_value(1, gp_axisrh) > 0
+    if gamepad_axis_value(contrl_num, gp_axisrh) > 0
     {
         key_right = true ;
     }
-    if gamepad_axis_value(1, gp_axislv) > 0
+    if gamepad_axis_value(contrl_num, gp_axislv) > 0
     {
         key_backward = true ;
     }
 }
 else if input_style_tank = TANK_JOYSTICK_SING
 {
-    if gamepad_axis_value(1, gp_axislv) < 0
+    if gamepad_axis_value(contrl_num, gp_axislv) < 0
     {
         key_forward = true ;
     }
-    if gamepad_axis_value(1, gp_axislh) < 0
+    if gamepad_axis_value(contrl_num, gp_axislh) < 0
     {
         key_left = true ;
     }
-    if gamepad_axis_value(1, gp_axislh) > 0
+    if gamepad_axis_value(contrl_num, gp_axislh) > 0
     {
         key_right = true ;
     }        
-    if gamepad_axis_value(1, gp_axislv) > 0
+    if gamepad_axis_value(contrl_num, gp_axislv) > 0
     {
         key_backward = true ;
     }
 }
 else if input_style_tank = TANK_JOYSTICK_DIR
 {
-    joy_direction = point_direction(0, 0, gamepad_axis_value(1, gp_axislh), gamepad_axis_value(1, gp_axislv));
-    joy_distance = point_distance(0, 0, gamepad_axis_value(1, gp_axislh), gamepad_axis_value(1, gp_axislv));
+    joy_direction = point_direction(0, 0, gamepad_axis_value(contrl_num, gp_axislh), gamepad_axis_value(contrl_num, gp_axislv));
+    joy_distance = point_distance(0, 0, gamepad_axis_value(contrl_num, gp_axislh), gamepad_axis_value(contrl_num, gp_axislv));
     ang_diff = angle_difference(joy_direction, image_angle)
     
     if joy_distance > 0
@@ -83,9 +84,4 @@ else if input_style_tank = TANK_JOYSTICK_DIR
         }
     }
 }
-
-    if gamepad_axis_value(2, gp_axislv) < 0
-    {
-        show_debug_message("Second controller detected")
-    }
 

@@ -3,6 +3,20 @@ scrInputClear()
 
 if player_type = HUMAN
 {
+
+    if room == roomMenu
+    {
+        contrl_num = 1
+    }
+    else if current_player == PLAYER1
+    {
+            contrl_num = 1
+    }
+    else // PLAYER2
+    {
+        contrl_num = 2
+    }
+
     scrProcessInputTank()
     scrProcessInputTurret()
     scrProcessInputTriggers()
