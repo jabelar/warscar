@@ -14,12 +14,12 @@ else if input_style_turret == TURRET_JOYSTICK_PAIR
 else if input_style_turret == TURRET_JOYSTICK_SING
 {
     // turret independently controlled
-    if gamepad_axis_value(1, gp_axisrh) < 0
+    if gamepad_axis_value(1, gp_axisrh) < -0.05
     {
         key_turret_right = false
         key_turret_left = true
     }
-    if gamepad_axis_value(1, gp_axisrh) > 0
+    if gamepad_axis_value(1, gp_axisrh) > 0.05
     {
         key_turret_right = true
         key_turret_left = false

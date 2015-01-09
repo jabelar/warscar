@@ -22,38 +22,38 @@ if input_style_tank = TANK_KEYBOARD
 }
 else if input_style_tank = TANK_JOYSTICK_PAIR
 {
-    if gamepad_axis_value(contrl_num, gp_axislv) < 0
+    if gamepad_axis_value(contrl_num, gp_axislv) < -0.05
     {
         key_forward = true ;
     }
-    if gamepad_axis_value(contrl_num, gp_axisrh) < 0
+    if gamepad_axis_value(contrl_num, gp_axisrh) < -0.05
     {
         key_left = true ;
     }
-    if gamepad_axis_value(contrl_num, gp_axisrh) > 0
+    if gamepad_axis_value(contrl_num, gp_axisrh) > 0.05
     {
         key_right = true ;
     }
-    if gamepad_axis_value(contrl_num, gp_axislv) > 0
+    if gamepad_axis_value(contrl_num, gp_axislv) > 0.05
     {
         key_backward = true ;
     }
 }
 else if input_style_tank = TANK_JOYSTICK_SING
 {
-    if gamepad_axis_value(contrl_num, gp_axislv) < 0
+    if gamepad_axis_value(contrl_num, gp_axislv) < 0.05
     {
         key_forward = true ;
     }
-    if gamepad_axis_value(contrl_num, gp_axislh) < 0
+    if gamepad_axis_value(contrl_num, gp_axislh) < -0.05
     {
         key_left = true ;
     }
-    if gamepad_axis_value(contrl_num, gp_axislh) > 0
+    if gamepad_axis_value(contrl_num, gp_axislh) > 0.05
     {
         key_right = true ;
     }        
-    if gamepad_axis_value(contrl_num, gp_axislv) > 0
+    if gamepad_axis_value(contrl_num, gp_axislv) > -0.05
     {
         key_backward = true ;
     }
