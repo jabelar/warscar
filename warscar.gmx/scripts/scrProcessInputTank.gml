@@ -64,7 +64,7 @@ else if input_style_tank = TANK_JOYSTICK_DIR
     joy_distance = point_distance(0, 0, gamepad_axis_value(contrl_num, gp_axislh), gamepad_axis_value(contrl_num, gp_axislv));
     ang_diff = angle_difference(joy_direction, image_angle)
     
-    if joy_distance > 0
+    if joy_distance > 0.1
     {
         if abs(ang_diff) < TANK_TURN_SPEED_BASE
         {
@@ -84,4 +84,3 @@ else if input_style_tank = TANK_JOYSTICK_DIR
         }
     }
 }
-

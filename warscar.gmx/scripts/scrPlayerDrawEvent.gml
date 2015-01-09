@@ -32,13 +32,26 @@ if view_current = current_player // only draw in players view
         }
     }
     
-    if ((current_player == PLAYER2) && player_type == COMPUTER && path_found) 
+    if (current_player == PLAYER2)
     {
-        draw_path(path, xpathstart, ypathstart, false)
-        // debug messages
-        draw_text(x, y-100, ai_target)
-        // draw_text(x, y-50, alarm[1])
-        // draw_text(x, y-20, have_enemy_flag)
+        if player_type == COMPUTER
+        {
+            if path_found
+            
+            {
+                draw_path(path, xpathstart, ypathstart, false)
+                // debug messages
+                draw_text(x, y-100, ai_target)
+                // draw_text(x, y-50, alarm[1])
+                // draw_text(x, y-20, have_enemy_flag)
+            }
+        } 
+        else // player 2 is human
+        {
+            // debug messages
+            draw_text(x, y-100, gamepad_axis_value(2, gp_axislv))
+        }
+        
     }   
 } 
 
