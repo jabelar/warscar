@@ -39,9 +39,9 @@ if view_current = current_player // only draw in players view
             if path_found
             
             {
-                draw_path(path, xpathstart, ypathstart, false)
+                // draw_path(path, xpathstart, ypathstart, false)
                 // debug messages
-                draw_text(x, y-100, ai_target)
+                // draw_text(x, y-100, ai_target)
                 // draw_text(x, y-50, alarm[1])
                 // draw_text(x, y-20, have_enemy_flag)
             }
@@ -49,7 +49,7 @@ if view_current = current_player // only draw in players view
         else // player 2 is human
         {
             // debug messages
-            draw_text(x, y-100, gamepad_axis_value(2, gp_axislv))
+            // draw_text(x, y-100, gamepad_axis_value(2, gp_axislv))
         }
         
     }   

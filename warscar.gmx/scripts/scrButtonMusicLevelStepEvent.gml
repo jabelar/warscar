@@ -17,4 +17,3 @@ switch (image_index)
         break ;
 }
 audio_sound_gain(global.background_music, global.music_level*0.25, 0)
-

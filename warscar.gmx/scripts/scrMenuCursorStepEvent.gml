@@ -33,6 +33,7 @@ if click_pressed
         image_index += 1
         if image_index >= image_number then image_index = 0
     }
+    
 }
 
 // process starting the game   

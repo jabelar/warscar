@@ -1,6 +1,20 @@
 show_debug_message("scrPlayerCreateEvent starting for player = "+string(current_player))
-if current_player = PLAYER1 then body_sprite = sprHuskyRed
-else body_sprite = sprHuskyBlue
+if current_player == PLAYER1
+{
+    body_sprite = sprHuskyRed
+}
+else
+{
+    body_sprite = sprHuskyBlue
+    if global.num_human_players == 1
+    {
+        player_type = COMPUTER
+    }
+    else
+    {
+        player_type = HUMAN
+    }
+}
 has_main_gun = true
 
 input_forward = vk_up

@@ -229,6 +229,7 @@
       <script>scripts\scrButtonInputPlayer1StepEvent.gml</script>
       <script>scripts\scrButtonInputPlayer2StepEvent.gml</script>
       <script>scripts\scrButtonMusicLevelStepEvent.gml</script>
+      <script>scripts\scrButtonPlayersStepEvent.gml</script>
       <script>scripts\scrButtonPointsStepEvent.gml</script>
     </scripts>
   </scripts>

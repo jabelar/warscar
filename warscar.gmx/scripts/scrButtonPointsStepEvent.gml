@@ -16,4 +16,3 @@ switch (image_index)
         global.points_to_win = 5
         break ;
 }
-
