@@ -19,7 +19,7 @@
     <option_android_arch_mipsr2>false</option_android_arch_mipsr2>
     <option_android_arch_mipsr2sf>false</option_android_arch_mipsr2sf>
     <option_android_arch_x86>True</option_android_arch_x86>
-    <option_android_build_version>1</option_android_build_version>
+    <option_android_build_version>3</option_android_build_version>
     <option_android_color_depth>1</option_android_color_depth>
     <option_android_display_name>Tank Battle</option_android_display_name>
     <option_android_flurry_enable>0</option_android_flurry_enable>
@@ -95,7 +95,7 @@
     <option_fullscreen>True</option_fullscreen>
     <option_gameguid>{7DC0B74C-465E-4019-BB7B-34D77E7CA92A}</option_gameguid>
     <option_gameid>450034571</option_gameid>
-    <option_haptic_effects>-1</option_haptic_effects>
+    <option_haptic_effects>0</option_haptic_effects>
     <option_hasloadimage>false</option_hasloadimage>
     <option_helpkey>true</option_helpkey>
     <option_html5_CreationEventOrder>true</option_html5_CreationEventOrder>
